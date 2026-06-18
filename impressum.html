@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum — Schill Watersports</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:       #001F3F;
+      --ocean:      #00B4D8;
+      --ocean-dark: #0096B7;
+      --sand:       #F5F0E8;
+      --white:      #FFFFFF;
+      --text:       #1A1A2E;
+      --muted:      #64748B;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+    /* NAV */
+    nav { background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: var(--ocean); }
+    .nav-back { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--ocean); }
+
+    /* HERO STRIP */
+    .page-hero { background: var(--navy); padding: 48px 24px 56px; position: relative; overflow: hidden; }
+    .page-hero::after { content: 'IMPRESSUM'; position: absolute; right: -10px; bottom: -20px; font-family: 'Bebas Neue', sans-serif; font-size: clamp(80px, 18vw, 160px); color: rgba(255,255,255,0.03); letter-spacing: 0.05em; pointer-events: none; user-select: none; line-height: 1; }
+    .page-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ocean); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    .page-eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--ocean); }
+    .page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 10vw, 88px); letter-spacing: 0.04em; color: var(--white); line-height: 1; }
+    .page-hero p { font-size: 15px; color: rgba(255,255,255,0.5); margin-top: 12px; max-width: 520px; line-height: 1.6; }
+
+    /* CONTENT */
+    .legal-content { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+
+    .legal-section { margin-bottom: 40px; }
+    .legal-section:last-child { margin-bottom: 0; }
+
+    .legal-section h2 { font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 12px; padding-bottom: 10px; border-bottom: 2px solid var(--sand); }
+
+    .legal-section p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 12px; }
+    .legal-section p:last-child { margin-bottom: 0; }
+
+    .legal-section a { color: var(--ocean-dark); text-decoration: none; border-bottom: 1px solid rgba(0,150,183,0.3); transition: border-color 0.2s; }
+    .legal-section a:hover { border-color: var(--ocean-dark); }
+
+    .placeholder { background: rgba(255,180,0,0.12); border: 1.5px dashed rgba(255,160,0,0.5); border-radius: 6px; padding: 2px 8px; font-size: 13px; font-weight: 600; color: #B45309; display: inline-block; cursor: pointer; font-family: 'DM Sans', sans-serif; }
+
+    .info-block { background: var(--sand); border-radius: 16px; padding: 24px 28px; margin-bottom: 16px; }
+    .info-block p { color: var(--text); }
+    .info-block strong { font-weight: 600; color: var(--navy); }
+
+    .notice-box { background: rgba(0,180,216,0.06); border: 1.5px solid rgba(0,180,216,0.2); border-radius: 12px; padding: 16px 20px; margin-top: 16px; }
+    .notice-box p { font-size: 13px; color: var(--muted); margin: 0; }
+
+    /* FOOTER */
+    footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.06em; color: var(--white); }
+    .footer-logo span { color: var(--ocean); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; list-style: none; }
+    .footer-links a { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ocean); }
+    .footer-links a.active { color: var(--ocean); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">SCHILL <span>WATERSPORTS</span></a>
+    <a class="nav-back" href="index.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Zurück zur Startseite
+    </a>
+  </nav>
+
+  <div class="page-hero">
+    <div style="max-width:760px;margin:0 auto;">
+      <p class="page-eyebrow">Rechtliches</p>
+      <h1>Impressum</h1>
+      <p>Angaben gemäß § 5 TMG (Telemediengesetz)</p>
+    </div>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="legal-section">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <div class="info-block">
+        <p><strong>Lukas Schill</strong></p>
+        <p>
+          <span class="placeholder">[Straße und Hausnummer]</span><br>
+          <span class="placeholder">[PLZ]</span> <span class="placeholder">[Ort]</span><br>
+          Deutschland
+        </p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>Kontakt</h2>
+      <div class="info-block">
+        <p>
+          <strong>Telefon:</strong> <span class="placeholder">[+49 XXX XXXXXXXX]</span><br>
+          <strong>E-Mail:</strong> <a href="mailto:info@schillwatersports.com">info@schillwatersports.com</a>
+        </p>
+      </div>
+      <div class="notice-box">
+        <p>⚠️ <strong>Hinweis:</strong> Gelbe Felder sind Platzhalter und müssen vor der Veröffentlichung durch echte Daten ersetzt werden.</p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+      <div class="info-block">
+        <p>
+          <strong>Lukas Schill</strong><br>
+          <span class="placeholder">[Straße und Hausnummer]</span><br>
+          <span class="placeholder">[PLZ]</span> <span class="placeholder">[Ort]</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="legal-section">
+      <h2>Streitschlichtung</h2>
+      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a></p>
+      <p>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Haftung für Inhalte</h2>
+      <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+      <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Haftung für Links</h2>
+      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+      <p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>Urheberrecht</h2>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+      <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-logo">SCHILL <span>WATERSPORTS</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="impressum.html" class="active">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

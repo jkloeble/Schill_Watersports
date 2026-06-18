@@ -1,0 +1,12 @@
+# ─── Schill Watersports robots.txt ─────────────────────────────
+# https://schillwatersports.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block modal/form handler paths if added later
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://schillwatersports.com/sitemap.xml

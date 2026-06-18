@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung — Schill Watersports</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:       #001F3F;
+      --ocean:      #00B4D8;
+      --ocean-dark: #0096B7;
+      --sand:       #F5F0E8;
+      --white:      #FFFFFF;
+      --text:       #1A1A2E;
+      --muted:      #64748B;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text); overflow-x: hidden; }
+
+    nav { background: var(--navy); display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+    .nav-logo span { color: var(--ocean); }
+    .nav-back { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.6); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--ocean); }
+
+    .page-hero { background: var(--navy); padding: 48px 24px 56px; position: relative; overflow: hidden; }
+    .page-hero::after { content: 'DATENSCHUTZ'; position: absolute; right: -10px; bottom: -20px; font-family: 'Bebas Neue', sans-serif; font-size: clamp(60px, 14vw, 130px); color: rgba(255,255,255,0.03); letter-spacing: 0.05em; pointer-events: none; user-select: none; line-height: 1; }
+    .page-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ocean); margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+    .page-eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--ocean); }
+    .page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(42px, 10vw, 80px); letter-spacing: 0.04em; color: var(--white); line-height: 1; }
+    .page-hero p { font-size: 15px; color: rgba(255,255,255,0.5); margin-top: 12px; max-width: 560px; line-height: 1.6; }
+
+    /* TOC */
+    .toc { background: var(--sand); border-radius: 16px; padding: 24px 28px; margin-bottom: 40px; }
+    .toc h3 { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .toc ol { list-style: none; display: flex; flex-direction: column; gap: 8px; padding: 0; counter-reset: toc-counter; }
+    .toc ol li { counter-increment: toc-counter; display: flex; align-items: baseline; gap: 10px; }
+    .toc ol li::before { content: counter(toc-counter, decimal-leading-zero); font-family: 'Bebas Neue', sans-serif; font-size: 15px; color: var(--ocean); flex-shrink: 0; }
+    .toc ol li a { font-size: 14px; color: var(--ocean-dark); text-decoration: none; border-bottom: 1px solid rgba(0,150,183,0.2); transition: border-color 0.2s; }
+    .toc ol li a:hover { border-color: var(--ocean-dark); }
+
+    .legal-content { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+    .legal-section { margin-bottom: 44px; scroll-margin-top: 80px; }
+    .legal-section:last-child { margin-bottom: 0; }
+    .legal-section h2 { font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--sand); display: flex; align-items: center; gap: 10px; }
+    .legal-section h2 .sec-num { font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: var(--ocean); letter-spacing: 0.04em; }
+    .legal-section h3 { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--navy); margin: 20px 0 8px; }
+    .legal-section p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 12px; }
+    .legal-section p:last-child { margin-bottom: 0; }
+    .legal-section ul { list-style: none; padding: 0; margin-bottom: 12px; display: flex; flex-direction: column; gap: 6px; }
+    .legal-section ul li { font-size: 15px; color: var(--muted); line-height: 1.6; padding-left: 18px; position: relative; }
+    .legal-section ul li::before { content: '→'; position: absolute; left: 0; color: var(--ocean); font-size: 13px; }
+    .legal-section a { color: var(--ocean-dark); text-decoration: none; border-bottom: 1px solid rgba(0,150,183,0.3); transition: border-color 0.2s; }
+    .legal-section a:hover { border-color: var(--ocean-dark); }
+
+    .highlight-box { background: rgba(0,180,216,0.06); border: 1.5px solid rgba(0,180,216,0.2); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+    .highlight-box p { font-size: 14px; color: var(--text); margin: 0; }
+    .highlight-box strong { color: var(--navy); }
+
+    .provider-card { background: var(--sand); border-radius: 12px; padding: 18px 20px; margin: 12px 0; }
+    .provider-card p { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+    .provider-card p:last-child { margin: 0; }
+    .provider-card strong { color: var(--navy); }
+
+    .rights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+    .right-item { background: var(--sand); border-radius: 12px; padding: 16px; }
+    .right-item .right-icon { font-size: 20px; margin-bottom: 8px; }
+    .right-item h4 { font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .right-item p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+    .placeholder { background: rgba(255,180,0,0.12); border: 1.5px dashed rgba(255,160,0,0.5); border-radius: 6px; padding: 2px 8px; font-size: 13px; font-weight: 600; color: #B45309; display: inline-block; font-family: 'DM Sans', sans-serif; }
+
+    footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06); padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 0.06em; color: var(--white); }
+    .footer-logo span { color: var(--ocean); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; list-style: none; }
+    .footer-links a { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ocean); }
+    .footer-links a.active { color: var(--ocean); }
+
+    @media (max-width: 600px) { .rights-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">SCHILL <span>WATERSPORTS</span></a>
+    <a class="nav-back" href="index.html">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Zurück zur Startseite
+    </a>
+  </nav>
+
+  <div class="page-hero">
+    <div style="max-width:760px;margin:0 auto;">
+      <p class="page-eyebrow">Rechtliches</p>
+      <h1>Datenschutz&shy;erklärung</h1>
+      <p>Zuletzt aktualisiert: Juni 2026 · Gemäß DSGVO (EU) 2016/679 und BDSG</p>
+    </div>
+  </div>
+
+  <div class="legal-content">
+
+    <!-- TOC -->
+    <div class="toc">
+      <h3>Inhalt</h3>
+      <ol>
+        <li><a href="#s1">Verantwortlicher</a></li>
+        <li><a href="#s2">Grundsätze der Datenverarbeitung</a></li>
+        <li><a href="#s3">Hosting &amp; technischer Betrieb</a></li>
+        <li><a href="#s4">Buchungsformular &amp; Formspree</a></li>
+        <li><a href="#s5">Google Fonts</a></li>
+        <li><a href="#s6">Keine Cookies, kein Tracking</a></li>
+        <li><a href="#s7">Speicherung &amp; Löschung</a></li>
+        <li><a href="#s8">Ihre Rechte</a></li>
+        <li><a href="#s9">Beschwerderecht</a></li>
+        <li><a href="#s10">Änderungen dieser Erklärung</a></li>
+      </ol>
+    </div>
+
+    <!-- 1 -->
+    <div class="legal-section" id="s1">
+      <h2><span class="sec-num">01</span> Verantwortlicher</h2>
+      <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und sonstiger datenschutzrechtlicher Bestimmungen ist:</p>
+      <div class="provider-card">
+        <p><strong>Lukas Schill</strong></p>
+        <p><span class="placeholder">[Straße und Hausnummer]</span></p>
+        <p><span class="placeholder">[PLZ Ort]</span>, Deutschland</p>
+        <p>E-Mail: <a href="mailto:info@schillwatersports.com">info@schillwatersports.com</a></p>
+        <p>Telefon: <span class="placeholder">[+49 XXX XXXXXXXX]</span></p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="legal-section" id="s2">
+      <h2><span class="sec-num">02</span> Grundsätze der Datenverarbeitung</h2>
+      <p>Wir verarbeiten personenbezogene Daten nur, soweit dies gesetzlich erlaubt ist oder Sie eingewilligt haben. Wir erheben nur die Daten, die für den jeweiligen Zweck tatsächlich erforderlich sind (Datensparsamkeit). Rechtsgrundlagen der Verarbeitung sind:</p>
+      <ul>
+        <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> — Einwilligung (z. B. Buchungsanfrage)</li>
+        <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> — Vertragsanbahnung und -erfüllung</li>
+        <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> — Berechtigte Interessen (z. B. technischer Betrieb)</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="legal-section" id="s3">
+      <h2><span class="sec-num">03</span> Hosting &amp; technischer Betrieb</h2>
+      <h3>GitHub Pages</h3>
+      <p>Diese Website wird über <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub Inc. (88 Colin P Kelly Jr St, San Francisco, CA 94107, USA). Beim Aufruf unserer Website verarbeitet GitHub automatisch technische Zugriffsdaten (Server-Logs), insbesondere:</p>
+      <ul>
+        <li>IP-Adresse des anfragenden Geräts</li>
+        <li>Datum und Uhrzeit des Abrufs</li>
+        <li>Name der abgerufenen Datei</li>
+        <li>Übertragene Datenmenge und HTTP-Statuscode</li>
+        <li>Browsertyp und Betriebssystem (User-Agent)</li>
+      </ul>
+      <p>Diese Daten werden von GitHub in eigener Verantwortung verarbeitet. Für GitHub Pages gilt die Datenschutzerklärung von GitHub: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+      <div class="highlight-box">
+        <p>⚠️ <strong>Drittlandübertragung:</strong> GitHub Inc. ist ein US-amerikanisches Unternehmen. Die Datenübertragung in die USA erfolgt auf Basis der EU-Standardvertragsklauseln (SCC) gemäß Art. 46 Abs. 2 lit. c DSGVO.</p>
+      </div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren und zuverlässigen Betrieb der Website).</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="legal-section" id="s4">
+      <h2><span class="sec-num">04</span> Buchungsformular &amp; Formspree</h2>
+      <p>Über das Buchungsformular auf unserer Website können Sie eine Buchungsanfrage senden. Dabei erheben wir folgende Daten:</p>
+      <ul>
+        <li>Vollständiger Name</li>
+        <li>E-Mail-Adresse</li>
+        <li>Telefonnummer</li>
+        <li>Gewählter Spot und Kurs</li>
+        <li>Angaben zu Ihrer sportlichen Erfahrung (Skill-Level, Jahre)</li>
+      </ul>
+
+      <h3>Verarbeitung durch Formspree</h3>
+      <p>Die Übermittlung des Formulars erfolgt über den Dienst <strong>Formspree</strong> (Formspree, Inc., 2093 Philadelphia Pike #9090, Claymont, DE 19703, USA). Formspree empfängt die Formularinhalte und leitet sie per E-Mail an uns weiter.</p>
+      <div class="provider-card">
+        <p><strong>Anbieter:</strong> Formspree, Inc., USA</p>
+        <p><strong>Zweck:</strong> Übermittlung von Buchungsanfragen per E-Mail</p>
+        <p><strong>Datenschutz:</strong> <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer">formspree.io/legal/privacy-policy</a></p>
+        <p><strong>Drittlandübertragung:</strong> USA, auf Basis von Standardvertragsklauseln (SCC)</p>
+        <p><strong>Löschung bei Formspree:</strong> Formspree speichert Formulareinreichungen bis zu 30 Tage (abhängig vom gewählten Plan). Wir empfehlen, die Datenspeicherung in den Formspree-Einstellungen auf das Minimum zu beschränken.</p>
+      </div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) und Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Absenden des Formulars).</p>
+      <p>Die von Ihnen eingegebenen Daten verwenden wir ausschließlich zur Bearbeitung Ihrer Buchungsanfrage und zur Kontaktaufnahme. Eine Weitergabe an Dritte findet nicht statt, außer soweit dies zur Vertragserfüllung notwendig ist oder gesetzlich vorgeschrieben wird.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="legal-section" id="s5">
+      <h2><span class="sec-num">05</span> Google Fonts</h2>
+      <p>Diese Website verwendet <strong>Google Fonts</strong>, einen Dienst der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Die Schriftarten werden beim Laden der Seite direkt von Google-Servern abgerufen. Dabei wird Ihre IP-Adresse an Google übertragen.</p>
+      <div class="provider-card">
+        <p><strong>Anbieter:</strong> Google LLC, USA</p>
+        <p><strong>Zweck:</strong> Einheitliche Darstellung von Schriftarten</p>
+        <p><strong>Datenschutz:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></p>
+        <p><strong>Drittlandübertragung:</strong> USA, auf Basis von Standardvertragsklauseln (SCC)</p>
+      </div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer konsistenten und professionellen Darstellung der Website).</p>
+      <div class="highlight-box">
+        <p>💡 <strong>Alternative:</strong> Um die Google-Fonts-Übertragung vollständig zu vermeiden, können die Schriftarten lokal eingebunden werden. Sprechen Sie uns bei Bedarf an.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="legal-section" id="s6">
+      <h2><span class="sec-num">06</span> Keine Cookies, kein Tracking</h2>
+      <p>Diese Website setzt <strong>keine Cookies</strong> und verwendet <strong>kein Tracking</strong> oder Web-Analyse-Dienste (wie Google Analytics, Matomo o. Ä.). Es findet keine Erstellung von Nutzerprofilen statt.</p>
+      <p>Es existiert keine Cookie-Banner-Pflicht für diese Website, da keine einwilligungspflichtigen Dienste eingesetzt werden — mit Ausnahme von Google Fonts (siehe oben), das auf Basis berechtigter Interessen genutzt wird.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="legal-section" id="s7">
+      <h2><span class="sec-num">07</span> Speicherung &amp; Löschung</h2>
+      <p>Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.</p>
+      <ul>
+        <li><strong>Buchungsanfragen (E-Mail):</strong> Werden nach Abschluss der Korrespondenz gelöscht, spätestens nach 3 Jahren, sofern kein Vertragsverhältnis zustande kommt.</li>
+        <li><strong>Vertragsdaten:</strong> Werden gemäß gesetzlicher Aufbewahrungspflicht (§ 147 AO: 10 Jahre für steuerrelevante Unterlagen) aufbewahrt.</li>
+        <li><strong>Server-Logs (GitHub Pages):</strong> Werden von GitHub automatisch nach kurzer Zeit gelöscht.</li>
+        <li><strong>Formspree-Daten:</strong> Bis zu 30 Tage bei Formspree; empfohlen wird eine kürzere Aufbewahrungsfrist in den Einstellungen.</li>
+      </ul>
+    </div>
+
+    <!-- 8 -->
+    <div class="legal-section" id="s8">
+      <h2><span class="sec-num">08</span> Ihre Rechte</h2>
+      <p>Als betroffene Person haben Sie nach der DSGVO folgende Rechte, die Sie jederzeit gegenüber uns geltend machen können:</p>
+      <div class="rights-grid">
+        <div class="right-item">
+          <div class="right-icon">📋</div>
+          <h4>Auskunft</h4>
+          <p>Art. 15 DSGVO — Sie können Auskunft über Ihre gespeicherten Daten verlangen.</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">✏️</div>
+          <h4>Berichtigung</h4>
+          <p>Art. 16 DSGVO — Unrichtige Daten können Sie jederzeit korrigieren lassen.</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">🗑️</div>
+          <h4>Löschung</h4>
+          <p>Art. 17 DSGVO — Sie können die Löschung Ihrer Daten verlangen ("Recht auf Vergessenwerden").</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">⏸️</div>
+          <h4>Einschränkung</h4>
+          <p>Art. 18 DSGVO — Sie können die Verarbeitung Ihrer Daten einschränken lassen.</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">📦</div>
+          <h4>Datenübertragbarkeit</h4>
+          <p>Art. 20 DSGVO — Sie können Ihre Daten in einem gängigen Format herausverlangen.</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">🚫</div>
+          <h4>Widerspruch</h4>
+          <p>Art. 21 DSGVO — Sie können der Verarbeitung auf Basis berechtigter Interessen widersprechen.</p>
+        </div>
+        <div class="right-item">
+          <div class="right-icon">↩️</div>
+          <h4>Widerruf</h4>
+          <p>Art. 7 Abs. 3 DSGVO — Erteilte Einwilligungen können Sie jederzeit ohne Angabe von Gründen widerrufen.</p>
+        </div>
+      </div>
+      <p style="margin-top:20px;">Zur Ausübung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:info@schillwatersports.com">info@schillwatersports.com</a></p>
+      <p>Wir bearbeiten Ihre Anfrage innerhalb von einem Monat (Art. 12 Abs. 3 DSGVO). Die Ausübung Ihrer Rechte ist kostenlos.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="legal-section" id="s9">
+      <h2><span class="sec-num">09</span> Beschwerderecht bei der Aufsichtsbehörde</h2>
+      <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren (Art. 77 DSGVO). Die zuständige Aufsichtsbehörde richtet sich nach Ihrem Wohnsitz oder dem Sitz des Verantwortlichen.</p>
+      <p>Zuständige Aufsichtsbehörde für Baden-Württemberg:</p>
+      <div class="provider-card">
+        <p><strong>Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)</strong></p>
+        <p>Lautenschlagerstraße 20, 70173 Stuttgart</p>
+        <p>Web: <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener noreferrer">www.baden-wuerttemberg.datenschutz.de</a></p>
+      </div>
+      <p><em>Hinweis: Bitte passen Sie die zuständige Aufsichtsbehörde auf das Bundesland Ihres Wohnsitzes an, falls dieser nicht in Baden-Württemberg liegt.</em></p>
+    </div>
+
+    <!-- 10 -->
+    <div class="legal-section" id="s10">
+      <h2><span class="sec-num">10</span> Änderungen dieser Erklärung</h2>
+      <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich gesetzliche Anforderungen ändern oder neue Dienste auf der Website eingesetzt werden. Die jeweils aktuelle Version ist stets auf dieser Seite abrufbar. Das Datum der letzten Aktualisierung ist am Anfang dieser Seite angegeben.</p>
+      <p>Bei wesentlichen Änderungen werden wir Sie — soweit möglich und erforderlich — aktiv informieren.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-logo">SCHILL <span>WATERSPORTS</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html" class="active">Datenschutz</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
